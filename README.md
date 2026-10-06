@@ -11,6 +11,7 @@ It gives a fresh Claude session the working memory of a previous run, so it star
 | **Loop patterns** | Six loops used end to end: the agent loop, Plan → Build → Review, the iteration loop with a change record, the Claude → Claude Code prompt relay, verify-before-trust, and per-row failure handling |
 | **Orchestrate context** | Rubric weights, how the four graded artifacts interact, the `AGENTS.md` / `log.txt` compliance trap, results history, lessons from two editions, a checklist for the next one |
 | **Prompt templates** | Kickoff, iteration protocol, targeted audit and final-freeze prompts for Claude Code |
+| **Winning approaches** | Patterns distilled from public top-finisher repos and leaderboards (May, June, August 2026): per-stage calibration, the model-describes/code-decides seam, citation guard, injection fencing, failure dispositions, anti-overfitting gates, design-doc suite |
 | **Toolkit digest** | A condensed read of the community `hackerrank-orchestrate-skills` kit: its CLI, 20-rule playbook, judge prep and release gate |
 
 ## The six loops
@@ -47,6 +48,7 @@ orchestrate-loop/
     ├── loop-patterns.md            # the six loops in detail, change-record template, phase gates
     ├── orchestrate-context.md      # rubric, results, lessons, next-edition checklist
     ├── prompt-templates.md         # paste-ready Claude Code prompts
+    ├── winning-approaches.md       # patterns and leaderboard calibration from public top finishers
     └── kit-repo.md                 # digest of the community toolkit
 ```
 
@@ -117,6 +119,7 @@ After each edition, update `references/orchestrate-context.md` with the new resu
 - Scores, ranks and results in the context file are self-reported and unverified against any leaderboard.
 - Rubric weights come from HackerRank's public material. The live challenge page wins on any conflict.
 - Toolkit scores (`score`, `transcript analyze`, `interview`) measure the shape of an answer or process, not correctness and not a real HackerRank score.
+- `references/winning-approaches.md` rests on the few public winner and runner-up repos and write-ups that were reachable (one 1st-place, one top-3, one top-40, plus the organizer's published analysis and public leaderboards). Several 1st-place repos were not found, and patterns are what top finishers did, not proof of cause. Leaderboard percentages were computed from public data.
 - The toolkit's own numbers come from a different challenge and dataset; treat them as method examples, not benchmarks.
 - Not affiliated with or endorsed by HackerRank or the toolkit's authors.
 

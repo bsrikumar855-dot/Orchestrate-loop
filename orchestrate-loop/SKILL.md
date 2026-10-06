@@ -1,6 +1,6 @@
 ---
 name: orchestrate-loop
-description: Playbook for HackerRank Orchestrate-style hackathons and agent builds — the loop patterns (agent loop, Plan→Build→Review, iteration/change-record loop, Claude→Claude Code prompt relay, verify-before-trust), Orchestrate rubric and scoring context, Aug/Sept 2026 lessons, and the Oct 2026 plan. Use whenever the user mentions Orchestrate, HackerRank challenges (Earn, Build Your Own Full-Stack), "looping with Claude", Claude Code kickoff or iteration prompts, AGENTS.md/log.txt, deterministic core vs LLM layer, or asks for a paste-ready prompt for Claude Code on a hackathon — even if they don't name the skill.
+description: Playbook for HackerRank Orchestrate-style hackathons and agent builds — the loop patterns (agent loop, Plan→Build→Review, iteration/change-record loop, Claude→Claude Code prompt relay, verify-before-trust), Orchestrate rubric and scoring context, Aug/Sept 2026 lessons, patterns distilled from public top-finisher repos and leaderboards (May/June/Aug), and the Oct 2026 plan. Use whenever the user mentions Orchestrate, HackerRank challenges (Earn, Build Your Own Full-Stack), "looping with Claude", Claude Code kickoff or iteration prompts, AGENTS.md/log.txt, deterministic core vs LLM layer, or asks for a paste-ready prompt for Claude Code on a hackathon — even if they don't name the skill.
 ---
 
 # Orchestrate Loop
@@ -33,6 +33,10 @@ Read `references/orchestrate-context.md` for rubric weights, results history, th
 - Aug 2026: global #209. Sept 2026 ("Buy or Wait?"): global #51, 70.7/100.
 - Architecture that held up: **deterministic core / LLM language layer**. The model extracts evidence and writes explanations; code owns every number and decision.
 - Oct 2026 plan: apply the grouping-key lesson (classify volatile vs fixed categories up front, robust statistic) and the iteration protocol from the first hour.
+
+## Patterns from public top finishers
+
+Read `references/winning-approaches.md` when designing or reviewing an agent, or preparing for the interview. It holds leaderboard calibration (balance wins; output CSV is the usual weak stage for top finishers), the model-describes/code-decides seam with rule `reads` sets and ablation tests, the citation guard (cite only what was read), pre-LLM short-circuit rules, fenced untrusted input, failure dispositions (ABORT / DEGRADE / FAIL ROW), content-addressed caches, noise-floor measurement, the anti-overfitting protocol and merge gates, and a design-doc suite. Evidence is limited to the few public repos and write-ups that were reachable; the file says which.
 
 ## The community skills repo (hackerrank-orchestrate-skills)
 
