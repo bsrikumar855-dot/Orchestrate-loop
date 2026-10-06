@@ -22,7 +22,7 @@ Published finding: no single metric predicts the leaderboard; balanced beats pea
 - Oct 2026 edition: planned next entry.
 
 ## Toolkit
-Community repo `NITISH-R-G/hackerrank-orchestrate-skills`: 35 skill folders (README says 34) plus the `orchestrate-kit` CLI. Full detail in `kit-repo.md`.
+Community repo `hackerrank-orchestrate-skills`: 35 skill folders (README says 34) plus the `orchestrate-kit` CLI. Full detail in `kit-repo.md`.
 - `orchestrate evaluate <repo>` audits spec conformance, evidence quality, dataset coupling, determinism
 - `orchestrate certify <repo>` stricter gate
 - `orchestrate transcript analyze` scores the chat transcript

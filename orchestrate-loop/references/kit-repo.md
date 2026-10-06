@@ -1,4 +1,4 @@
-# The skills repo: NITISH-R-G/hackerrank-orchestrate-skills
+# The community skills repo: hackerrank-orchestrate-skills
 
 Read from a fresh clone (latest commit: "Phase 2: experiment tracker + live score delta loop"). Not affiliated with HackerRank; built from their public writing plus one author's August 2026 submission. Treat its evidence tiers as the author's, not yours.
 

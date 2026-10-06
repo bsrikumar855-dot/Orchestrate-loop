@@ -11,7 +11,7 @@ It gives a fresh Claude session the working memory of a previous run, so it star
 | **Loop patterns** | Six loops used end to end: the agent loop, Plan → Build → Review, the iteration loop with a change record, the Claude → Claude Code prompt relay, verify-before-trust, and per-row failure handling |
 | **Orchestrate context** | Rubric weights, how the four graded artifacts interact, the `AGENTS.md` / `log.txt` compliance trap, results history, lessons from two editions, a checklist for the next one |
 | **Prompt templates** | Kickoff, iteration protocol, targeted audit and final-freeze prompts for Claude Code |
-| **Toolkit digest** | A condensed read of the community [`hackerrank-orchestrate-skills`](https://github.com/NITISH-R-G/hackerrank-orchestrate-skills) kit: its CLI, 20-rule playbook, judge prep and release gate |
+| **Toolkit digest** | A condensed read of the community `hackerrank-orchestrate-skills` kit: its CLI, 20-rule playbook, judge prep and release gate |
 
 ## The six loops
 
@@ -96,8 +96,9 @@ Compare this competitor repo against ours and tell me what to take for the next 
 
 This skill is a digest and a set of working patterns. It does not replace the toolkit, which has per-gate auto-triggering skills and a CLI that audits your actual repo (`evaluate`, `release`, `selftest`, `mentor`, `interview`, `experiment`, `score`).
 
+Find the `hackerrank-orchestrate-skills` repository on GitHub, clone it, then:
+
 ```bash
-git clone https://github.com/NITISH-R-G/hackerrank-orchestrate-skills.git
 cd hackerrank-orchestrate-skills
 pip install -e .
 python -m orchestrate_kit memory seed
@@ -117,8 +118,8 @@ After each edition, update `references/orchestrate-context.md` with the new resu
 - Rubric weights come from HackerRank's public material. The live challenge page wins on any conflict.
 - Toolkit scores (`score`, `transcript analyze`, `interview`) measure the shape of an answer or process, not correctness and not a real HackerRank score.
 - The toolkit's own numbers come from a different challenge and dataset; treat them as method examples, not benchmarks.
-- Not affiliated with or endorsed by HackerRank or the toolkit's author.
+- Not affiliated with or endorsed by HackerRank or the toolkit's authors.
 
 ## Credits
 
-The toolkit digest in `references/kit-repo.md` summarizes [NITISH-R-G/hackerrank-orchestrate-skills](https://github.com/NITISH-R-G/hackerrank-orchestrate-skills). Credit for that method and its case studies belongs to its author.
+The toolkit digest in `references/kit-repo.md` summarizes the community `hackerrank-orchestrate-skills` toolkit. Credit for that method and its case studies belongs to its authors.

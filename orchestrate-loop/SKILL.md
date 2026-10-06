@@ -34,7 +34,7 @@ Read `references/orchestrate-context.md` for rubric weights, results history, th
 - Architecture that held up: **deterministic core / LLM language layer**. The model extracts evidence and writes explanations; code owns every number and decision.
 - Oct 2026 plan: apply the grouping-key lesson (classify volatile vs fixed categories up front, robust statistic) and the iteration protocol from the first hour.
 
-## The skills repo (NITISH-R-G/hackerrank-orchestrate-skills)
+## The community skills repo (hackerrank-orchestrate-skills)
 
 Read `references/kit-repo.md` for the CLI (including `orchestrate experiment` and `score` loop commands), the 20-rule playbook, judge prep with the CONSTANTS.md provenance drill, the 10 claims never to make, the release gate and the 24-hour time budget. Its method in one line: measure before shipping, measure blast radius, prove the counterfactual, attack your own measurement before trusting it. Its scores measure shape and process, never your real HackerRank score.
 
